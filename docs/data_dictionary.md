@@ -34,7 +34,7 @@ Defines each field in the Motor Insurance dataset used throughout the project. T
 # 1. Policy Information
 
 | Column | Type | Description | Example | Validation | 
-|--------|------|-------------|---------|------------|
+|---------|------|-------------|---------|------------|
 | insured_id | Integer | Unique identifier assigned to each insured policyholder. The same policyholder may appear in multiple years of the dataset. | 12584 | Required; must not be NULL |
 | year | Integer | Calendar year associated with the insurance policy record. | 2023 | Must be between 2022 and 2024 |
 | policy_type | String | Type of insurance coverage purchased by the policyholder. | COMP_E | Must match a valid policy type code |
