@@ -105,6 +105,8 @@ Defines each field in the Motor Insurance dataset used throughout the project. T
 
 # 6. Code Definitions
 
+## Insurance Codes
+
 | Category | Code | Meaning |
 |----------|------|---------|
 | Policy Type | TP | Third-Party Liability |
@@ -116,12 +118,28 @@ Defines each field in the Motor Insurance dataset used throughout the project. T
 | Policy Status | C | Cancelled |
 | Business Type | NB | New Business |
 | Business Type | P | Policy Renewal |
+
+---
+
+## Vehicle Codes
+
+| Category | Code | Meaning |
+|----------|------|---------|
 | Fuel Type | G | Gasoline |
 | Fuel Type | D | Diesel |
-| Payment Frequency | A | Annual |
-| Payment Frequency | S | Semiannual |
-| Payment Frequency | Q | Quarterly |
-| Payment Frequency | M | Monthly |
 | Municipality Type | I | Urban Municipality |
 | Municipality Type | II | Intermediate Municipality |
 | Municipality Type | III | Rural Municipality |
+| Circulation Area | U | Urban Area |
+| Circulation Area | R | Rural Area |
+
+---
+
+## Payment Codes
+
+| Code | Meaning |
+|------|---------|
+| A | Annual |
+| S | Semiannual |
+| Q | Quarterly |
+| M | Monthly |
