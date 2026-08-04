@@ -105,69 +105,23 @@ Defines each field in the Motor Insurance dataset used throughout the project. T
 
 # 6. Code Definitions
 
-## Policy Type
-
-| Code | Meaning |
-|------|---------|
-| TP | Third-Party Liability |
-| TPG | Third-Party + Glass |
-| CC | Combined Coverage |
-| COMP_E | Comprehensive with Excess |
-| COMP_N | Comprehensive without Excess |
-
----
-
-## Policy Status
-
-| Code | Meaning |
-|------|---------|
-| A | Active |
-| C | Cancelled |
-
----
-
-## Business Type
-
-| Code | Meaning |
-|------|---------|
-| NB | New Business |
-| P | Policy Renewal |
-
----
-
-## Fuel Type
-
-| Code | Meaning |
-|------|---------|
-| G | Gasoline |
-| D | Diesel |
-
----
-
-## Payment Frequency
-
-| Code | Meaning |
-|------|---------|
-| A | Annual |
-| S | Semiannual |
-| Q | Quarterly |
-| M | Monthly |
-
----
-
-## Municipality Type
-
-| Code | Meaning |
-|------|---------|
-| I | Urban municipality |
-| II | Intermediate municipality |
-| III | Rural municipality |
-
----
-
-## Circulation Area
-
-| Code | Meaning |
-|------|---------|
-| U | Urban circulation area |
-| R | Rural circulation area |
+| Category | Code | Meaning |
+|----------|------|---------|
+| Policy Type | TP | Third-Party Liability |
+| Policy Type | TPG | Third-Party + Glass |
+| Policy Type | CC | Combined Coverage |
+| Policy Type | COMP_E | Comprehensive with Excess |
+| Policy Type | COMP_N | Comprehensive without Excess |
+| Policy Status | A | Active |
+| Policy Status | C | Cancelled |
+| Business Type | NB | New Business |
+| Business Type | P | Policy Renewal |
+| Fuel Type | G | Gasoline |
+| Fuel Type | D | Diesel |
+| Payment Frequency | A | Annual |
+| Payment Frequency | S | Semiannual |
+| Payment Frequency | Q | Quarterly |
+| Payment Frequency | M | Monthly |
+| Municipality Type | I | Urban Municipality |
+| Municipality Type | II | Intermediate Municipality |
+| Municipality Type | III | Rural Municipality |
