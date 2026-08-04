@@ -42,3 +42,18 @@ Defines each field in the Motor Insurance dataset used throughout the project. T
 | business_type | String | Indicates whether the policy is a new policy or a renewal. | NB | Must match a valid business type code |
 | payment_frequency | String | Frequency at which the insurance premium is paid. | A | Must match a valid payment frequency code |
 | bonus_score | String | Bonus-Malus classification that reflects the insured's claim history and influences premium calculation. | G | Required; must not be NULL |
+
+# 2. Driver & Vehicle Information
+
+| Column | Type | Description | Example | Validation |
+|---------|------|-------------|---------|------------|
+| driver_age | Integer | Age of the primary driver at the time of the policy. | 38 | Must be greater than or equal to 16 |
+| vehicle_age | Float | Age of the insured vehicle in years. | 7 | Must be greater than or equal to 0 |
+| age_driving_licence | Float | Number of years the driver has held a valid driver's license. | 18 | Must be greater than or equal to 0 |
+| fuel_type | String | Fuel type of the insured vehicle. | G | Must match a valid fuel type code |
+| vehicle_value | Float | Declared insured value of the vehicle. | 18,500 | Must be greater than or equal to 0 |
+| seats | Integer | Number of seats in the insured vehicle. | 5 | Must be greater than 0 |
+| power_to_weight_ratio | Float | Vehicle power-to-weight ratio used as a measure of performance. | 12.3 | Must be greater than 0 |
+| vehicle_brand | String | Manufacturer or brand of the insured vehicle. | RENAULT | Required; must not be NULL |
+| municipality_type | String | Classification of the municipality where the insured vehicle is registered. | I | Must match a valid municipality code |
+| circulation_area | String | Geographic circulation area classification assigned to the vehicle. | U | Must match a valid circulation area code |
