@@ -57,3 +57,117 @@ Defines each field in the Motor Insurance dataset used throughout the project. T
 | vehicle_brand | String | Manufacturer or brand of the insured vehicle. | RENAULT | Required; must not be NULL |
 | municipality_type | String | Classification of the municipality where the insured vehicle is registered. | I | Must match a valid municipality code |
 | circulation_area | String | Geographic circulation area classification assigned to the vehicle. | U | Must match a valid circulation area code |
+
+# 3. Premium Information
+
+| Column | Type | Description | Example | Validation |
+|---------|------|-------------|---------|------------|
+| total_premium | Float | Total insurance premium charged for the policy. | 1,245.80 | >= 0 |
+| liability_premium | Float | Portion of the total premium allocated to liability coverage. | 540.25 | >= 0 |
+| property_damage_premium | Float | Portion of the premium allocated to property damage coverage. | 210.40 | >= 0 |
+| liability_property_injury_premium | Float | Premium allocated to liability coverage for property damage and bodily injury. | 385.75 | >= 0 |
+| theft_premium | Float | Portion of the premium allocated to theft coverage. | 82.60 | >= 0 |
+| fire_premium | Float | Portion of the premium allocated to fire damage coverage. | 65.30 | >= 0 |
+| glass_premium | Float | Portion of the premium allocated to glass damage coverage. | 48.20 | >= 0 |
+| legal_protection_premium | Float | Portion of the premium allocated to legal protection coverage. | 32.10 | >= 0 |
+| occupants_premium | Float | Portion of the premium allocated to occupant protection coverage. | 27.50 | >= 0 |
+
+# 4. Claims Information 
+
+| Column | Type | Description | Example | Validation |
+|---------|------|-------------|---------|------------|
+| total_claims | Integer | Total number of claims reported for the policy. | 1 | >= 0 |
+| liability_claims | Integer | Number of liability claims reported. | 0 | >= 0 |
+| property_claims | Integer | Number of property damage claims reported. | 1 | >= 0 |
+| liability_property_injury_claims | Integer | Number of liability claims involving property damage or bodily injury. | 0 | >= 0 |
+| theft_claims | Integer | Number of theft claims reported. | 0 | >= 0 |
+| fire_claims | Integer | Number of fire damage claims reported. | 0 | >= 0 |
+| glass_claims | Integer | Number of glass damage claims reported. | 0 | >= 0 |
+| legal_protection_claims | Integer | Number of legal protection claims reported. | 0 | >= 0 |
+| occupants_claims | Integer | Number of occupant protection claims reported. | 0 | >= 0 |
+| total_incurred | Float | Total monetary amount incurred from all claims. | 2450.75 | >= 0 |
+| liability_incurred | Float | Total incurred amount from liability claims. | 0.00 | >= 0 |
+| liability_property_incurred | Float | Total incurred amount from liability property damage claims. | 1200.00 | >= 0 |
+| liability_injury_incurred | Float | Total incurred amount from liability bodily injury claims. | 0.00 | >= 0 |
+| property_incurred | Float | Total incurred amount from property damage claims. | 850.00 | >= 0 |
+| theft_incurred | Float | Total incurred amount from theft claims. | 0.00 | >= 0 |
+| fire_incurred | Float | Total incurred amount from fire claims. | 0.00 | >= 0 |
+| glass_incurred | Float | Total incurred amount from glass claims. | 400.75 | >= 0 |
+| legal_protection_incurred | Float | Total incurred amount from legal protection claims. | 0.00 | >= 0 |
+| occupants_incurred | Float | Total incurred amount from occupant protection claims. | 0.00 | >= 0 |
+
+# 5. Exposure Information 
+
+| Column | Type | Description | Example | Validation |
+|---------|------|-------------|---------|------------|
+| total_exposure | Float | Total insured exposure for the policy during the coverage period. | 1.00 | >= 0 |
+| liability_exposure | Float | Exposure associated with liability coverage. | 1.00 | >= 0 |
+
+# 6. Code Definitions
+
+## Policy Type
+
+| Code | Meaning |
+|------|---------|
+| TP | Third-Party Liability |
+| TPG | Third-Party + Glass |
+| CC | Combined Coverage |
+| COMP_E | Comprehensive with Excess |
+| COMP_N | Comprehensive without Excess |
+
+---
+
+## Policy Status
+
+| Code | Meaning |
+|------|---------|
+| A | Active |
+| C | Cancelled |
+
+---
+
+## Business Type
+
+| Code | Meaning |
+|------|---------|
+| NB | New Business |
+| P | Policy Renewal |
+
+---
+
+## Fuel Type
+
+| Code | Meaning |
+|------|---------|
+| G | Gasoline |
+| D | Diesel |
+
+---
+
+## Payment Frequency
+
+| Code | Meaning |
+|------|---------|
+| A | Annual |
+| S | Semiannual |
+| Q | Quarterly |
+| M | Monthly |
+
+---
+
+## Municipality Type
+
+| Code | Meaning |
+|------|---------|
+| I | Urban municipality |
+| II | Intermediate municipality |
+| III | Rural municipality |
+
+---
+
+## Circulation Area
+
+| Code | Meaning |
+|------|---------|
+| U | Urban circulation area |
+| R | Rural circulation area |
