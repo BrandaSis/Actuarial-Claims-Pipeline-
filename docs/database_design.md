@@ -13,8 +13,7 @@ The database is designed around five main entities:
 1. Insureds
 2. Vehicles
 3. Policies
-4. Premium Details 
-5. Claims
+4. Claims
 
 ---
 
