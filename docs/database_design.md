@@ -17,3 +17,7 @@ The database is designed around five main entities:
 5. Claims
 
 ---
+
+## Entity Relationship Diagram
+
+![Actuarial Claims Pipeline ERD](actuarial_erd.png)
