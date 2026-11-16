@@ -16,7 +16,7 @@ CREATE TABLE policy (
     policy_status TEXT,
     business_type TEXT,
     driver_age NUMERIC,
-    bonus_score NUMERIC,
+    bonus_score TEXT,
     total_premium NUMERIC,
     total_exposure NUMERIC,
 
